@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button x:Name="RegisterWNS" Content="Register WNS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134" Height="42" Click="RegisterWNS_ClickAsync" Margin="10,10,0,0"/>
+        <Button x:Name="SendWNS" Content="Send WNS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134" Height="42" Click="SendWNS_Click" Margin="10,57,0,0"/>
+        <Button x:Name="CreateToast" Content="Create Toast" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134" Height="42" Click="CreateToast_Click" Margin="10,104,0,0"/>
     </Grid>
 </Page>
+    
+    
