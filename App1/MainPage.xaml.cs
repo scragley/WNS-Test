@@ -40,7 +40,7 @@ namespace App1
         private async void RegisterWNS_ClickAsync(object sender, RoutedEventArgs e)
         {
             var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
-            var hub = new NotificationHub("scragley-test-wns", "Endpoint=sb://scragley-test-wns.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=dWQif1mID/ahyY3vJTO95CN05fq1HQl/sBoRLedLnLA=");
+            var hub = new NotificationHub("servicename", "Endpoint=sb://servicename.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=key=");
             var result = await hub.RegisterNativeAsync(channel.Uri);
 
             // Displays the registration ID so you know it was successful
